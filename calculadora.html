@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./imagens/calc.png" type="image/x-icon">
+    <title>Calculadora IMC</title>
+</head>
+<body onload="aviso()">
+    <!--NÃO SOU MÉDICO, NEM NUTRICIONISTA, APENAS FIZ ESSE CÓDIGO PARA COMPLEMENTAR ESTUDOS!-->
+    <div id="centralizar">
+        <div class="container-md row">
+            <div class="col">
+                <h1 class="tituloHeader">Calculadora IMC</h1>
+                <div class="colunaUm">
+                    <form>
+                        <p>
+                            <input type="number" id="alturaForm" placeholder="Altura ex: 170 Cm">
+                        </p>
+                        <p>
+                            <input type="number" id="pesoForm" placeholder="Peso ex: 89 Kg">
+                        </p>
+                        <p>
+                            <input type="button" value="Calcular" class="btn-calc" onclick="calcular()">
+                        </p>
+                    </form>
+                </div>
+                <div id="resultado">
+                    <p>O resultado aparecerá aqui!</p>
+                </div>
+            </div>
+            <div class="col imagem">
+                <img src="imagens/imgbg.png" alt="Fitness man and woman character illustrator" class="imgSide">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
